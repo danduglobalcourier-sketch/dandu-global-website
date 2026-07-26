@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -17,14 +18,21 @@
 <body>
   <header class="site-header" id="site-header">
     <div class="container header-inner">
-      <a class="logo" href="#home" aria-label="Dandu Global Courier"><img src="assets/images/logo.svg" alt="DANDU GLOBAL COURIER logo"/></a>
+      <a class="logo" href="#home" aria-label="Dandu Global Courier">
+        <img src="assets/images/logo.svg" alt="DANDU GLOBAL COURIER logo"/>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Open navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
       <nav class="main-nav" aria-label="Primary navigation">
         <ul>
-          <li><a href="#about" class="nav-link"><svg class="icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 2L2 7l10 5 10-5-10-5z"></path></svg>About</a></li>
-          <li><a href="#services" class="nav-link"><svg class="icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8v-10h-8v10zm0-18v6h8V3h-8z"></path></svg>Services</a></li>
-          <li><a href="#countries" class="nav-link"><svg class="icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 100 20 10 10 0 000-20z"></path></svg>Countries</a></li>
-          <li><a href="#rates" class="nav-link"><svg class="icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M3 3h18v2H3V3zm0 6h12v2H3V9zm0 6h18v2H3v-2z"></path></svg>Rate List</a></li>
-          <li><a href="#contact" class="nav-link"><svg class="icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M21 8V7l-3 2-2-1-3 2-2-1-3 2V8L3 5v14h18V8z"></path></svg>Contact</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#countries" class="nav-link">Countries</a></li>
+          <li><a href="#rates" class="nav-link">Rate List</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
       </nav>
       <div class="header-cta">
@@ -38,82 +46,158 @@
     <section id="home" class="hero-new">
       <div class="hero-layer worldmap"><img src="assets/images/world-map.svg" alt="World map background"/></div>
       <div id="hero-particles" class="hero-layer particles" aria-hidden="true"></div>
-      <div class="hero-gradient hero-layer"></div>
+      <div class="hero-layer hero-gradient"></div>
       <div class="container hero-wrap">
-        <div class="hero-left">
-          <h1 class="brand-title">DANDU GLOBAL<br><span class="subtitle">DOMESTIC & INTERNATIONAL COURIER</span></h1>
-          <h3 class="hero-tag">Connecting India to the World</h3>
-          <p class="hero-lead">Fast, Safe and Reliable Courier Services for Documents, Food Items, Medicines, Parcels and Commercial Shipments.</p>
-
-          <div class="feature-badges">
-            <div class="badge"><svg class="bicon" viewBox="0 0 24 24"><path fill="currentColor" d="M12 1L3 5v6c0 5 3 9 9 11 6-2 9-6 9-11V5l-9-4z"></path></svg><span>Safe & Secure</span></div>
-            <div class="badge"><svg class="bicon" viewBox="0 0 24 24"><path fill="currentColor" d="M3 12h3l3-9 4 18 3-9h4"></path></svg><span>Fast Delivery</span></div>
-            <div class="badge"><svg class="bicon" viewBox="0 0 24 24"><path fill="currentColor" d="M20 8v11H4V8h16zm0-2H4a2 2 0 00-2 2v11a2 2 0 002 2h16a2 2 0 002-2V8a2 2 0 00-2-2z"></path></svg><span>Door Pickup</span></div>
-            <div class="badge"><svg class="bicon" viewBox="0 0 24 24"><path fill="currentColor" d="M2 12h20v2H2v-2zM6 6h12v2H6V6zM6 16h12v2H6v-2z"></path></svg><span>Worldwide Service</span></div>
-          </div>
-
+        <div class="hero-copy fade-on-scroll">
+          <span class="eyebrow">Premium International Logistics</span>
+          <h1 class="brand-title">DANDU GLOBAL COURIER</h1>
+          <p class="hero-subtitle">Connecting India to the World</p>
+          <p class="hero-lead">Luxury courier experiences from India to the world, with white-glove pickup, secure customs clearance and dedicated support.</p>
           <div class="hero-actions">
             <button class="ripple btn btn-primary large" id="cta-book">Book Pickup</button>
             <button class="ripple btn btn-outline large" id="cta-track">Track Shipment</button>
-            <a class="ripple btn btn-call large" href="tel:+919839831249">Call Now</a>
+            <a class="btn btn-whatsapp large" href="https://wa.me/919839831249" target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+          <div class="hero-stats">
+            <article class="hero-stat-card">
+              <span class="stat-value" data-counter="220">0</span>
+              <span class="stat-suffix">+</span>
+              <p>Countries</p>
+            </article>
+            <article class="hero-stat-card">
+              <span class="stat-value" data-counter="10000">0</span>
+              <span class="stat-suffix">+</span>
+              <p>Deliveries</p>
+            </article>
+            <article class="hero-stat-card">
+              <span class="stat-value" data-counter="5000">0</span>
+              <span class="stat-suffix">+</span>
+              <p>Happy Customers</p>
+            </article>
+            <article class="hero-stat-card">
+              <span class="stat-value" data-counter="24">0</span>
+              <span class="stat-suffix">×7</span>
+              <p>Support</p>
+            </article>
           </div>
         </div>
-
-        <div class="hero-right">
-          <div class="scene">
-            <div class="plane-wrap"><img src="assets/images/plane.svg" alt="Cargo plane" class="plane"/></div>
-            <img src="assets/images/courier.svg" alt="Courier delivery person" class="courier"/>
-            <img src="assets/images/boxes.svg" alt="Courier boxes" class="boxes"/>
+        <div class="hero-visual fade-on-scroll">
+          <div class="visual-card">
+            <div class="airplane-wrap"><img src="assets/images/plane.svg" alt="Flying cargo plane" /></div>
+            <div class="truck-illustration">
+              <svg viewBox="0 0 340 220" aria-hidden="true" role="img">
+                <defs>
+                  <linearGradient id="bodyGrad" x1="0" x2="1" y1="0" y2="1">
+                    <stop offset="0%" stop-color="#0B3D91" />
+                    <stop offset="100%" stop-color="#082A5D" />
+                  </linearGradient>
+                </defs>
+                <path d="M12 122h278a20 20 0 0 1 20 20v10H12v-10a20 20 0 0 1 20-20Z" fill="#E8EEFF"/>
+                <rect x="16" y="84" width="206" height="72" rx="20" fill="url(#bodyGrad)" />
+                <rect x="222" y="108" width="84" height="48" rx="18" fill="#0B3D91" />
+                <rect x="32" y="100" width="120" height="46" rx="16" fill="rgba(255,255,255,0.16)" />
+                <rect x="42" y="112" width="50" height="18" rx="9" fill="#FFD400" />
+                <rect x="236" y="120" width="60" height="22" rx="11" fill="#FFD400" />
+                <circle cx="90" cy="196" r="24" fill="#0B3D91" />
+                <circle cx="246" cy="196" r="24" fill="#0B3D91" />
+                <circle cx="90" cy="196" r="11" fill="#FFD400" />
+                <circle cx="246" cy="196" r="11" fill="#FFD400" />
+                <path d="M82 100c16-14 34-14 52-6s30 24 26 42-24 18-40 8-26-18-38-28z" fill="#FFD400" opacity="0.24" />
+              </svg>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="about" class="about container section">
-      <h2>About DANDU GLOBAL COURIER</h2>
-      <p>We are a premium courier service connecting India with the world. With reliable partners and a focus on secure handling, timely delivery and professional customer support, Dandu Global Courier is your trusted logistics partner.</p>
-      <ul class="about-list">
-        <li>Domestic & International Courier</li>
-        <li>Secure packaging and door pickup</li>
-        <li>Competitive pricing and real-time tracking</li>
-      </ul>
+    <section id="about" class="about section container fade-on-scroll">
+      <div class="section-head">
+        <span class="eyebrow">About the Brand</span>
+        <h2>Connecting India to the World with prestige and precision.</h2>
+      </div>
+      <div class="about-grid">
+        <div>
+          <p>Dandu Global Courier delivers premium international logistics with a focus on security, speed and white glove service. From documents to commercial freight, our team simplifies every shipment.</p>
+          <ul class="about-list">
+            <li>Domestic & International courier services</li>
+            <li>Secure packaging, home pickup and tracking</li>
+            <li>Competitive rates with dedicated customer support</li>
+          </ul>
+        </div>
+        <div class="about-highlights">
+          <div class="highlight-card">
+            <h3>24/7 Concierge Support</h3>
+            <p>Personalized service for every shipment and customs guidance.</p>
+          </div>
+          <div class="highlight-card">
+            <h3>Premium Delivery Network</h3>
+            <p>Trusted partners in major trade corridors across the globe.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="statistics" class="statistics section">
+      <div class="container section-head fade-on-scroll">
+        <span class="eyebrow">Performance in Numbers</span>
+        <h2>Global logistics powered by precision.</h2>
+      </div>
+      <div class="stats-grid fade-on-scroll">
+        <article class="stat-card">
+          <div class="stat-value" data-counter="150">0</div>
+          <p>Destinations served</p>
+        </article>
+        <article class="stat-card">
+          <div class="stat-value" data-counter="98">0</div>
+          <p>On-time delivery rate</p>
+        </article>
+        <article class="stat-card">
+          <div class="stat-value" data-counter="50">0</div>
+          <p>International corridors</p>
+        </article>
+        <article class="stat-card">
+          <div class="stat-value" data-counter="24">0</div>
+          <p>Hour global support</p>
+        </article>
+      </div>
     </section>
 
     <section id="services" class="services section">
       <div class="container">
-        <h2>Our Services</h2>
-        <div class="grid services-grid">
-          <article class="card hover-card">
-            <h3>Domestic Courier</h3>
-            <p>Fast deliveries across India with end-to-end tracking.</p>
-          </article>
-          <article class="card hover-card">
-            <h3>International Courier</h3>
-            <p>Worldwide partnerships ensuring timely international shipment.</p>
-          </article>
-          <article class="card hover-card">
-            <h3>Documents</h3>
-            <p>Secure document handling and express delivery.</p>
-          </article>
-          <article class="card hover-card">
-            <h3>Medicines</h3>
-            <p>Safe shipment for medical consignments with temperature care options.</p>
-          </article>
-          <article class="card hover-card">
-            <h3>Food Items</h3>
-            <p>Fast transit and secure packing for perishables.</p>
-          </article>
-          <article class="card hover-card">
-            <h3>Commercial Shipments</h3>
-            <p>Competitive freight options for businesses of all sizes.</p>
-          </article>
-          <article class="card hover-card">
+        <div class="section-head fade-on-scroll">
+          <span class="eyebrow">Premium Services</span>
+          <h2>Luxury logistics solutions for every shipment.</h2>
+        </div>
+        <div class="grid services-grid fade-on-scroll">
+          <article class="service-card">
+            <span class="service-icon">🚚</span>
             <h3>Door Pickup</h3>
-            <p>Schedule pickups from your home or office.</p>
+            <p>Schedule a pickup from home or office with real-time collection updates.</p>
           </article>
-          <article class="card hover-card">
-            <h3>Secure Packing</h3>
-            <p>Professional packing to protect your goods in transit.</p>
+          <article class="service-card">
+            <span class="service-icon">✈️</span>
+            <h3>International Express</h3>
+            <p>Fast air transit for documents and parcels to major markets worldwide.</p>
+          </article>
+          <article class="service-card">
+            <span class="service-icon">📦</span>
+            <h3>Secure Packaging</h3>
+            <p>Professional packing and temperature-safe handling for every cargo type.</p>
+          </article>
+          <article class="service-card">
+            <span class="service-icon">🧾</span>
+            <h3>Customs Clearance</h3>
+            <p>Comprehensive customs support so your shipment clears quickly and reliably.</p>
+          </article>
+          <article class="service-card">
+            <span class="service-icon">💼</span>
+            <h3>Business Freight</h3>
+            <p>Competitive rates for commercial shipments and high-value logistics.</p>
+          </article>
+          <article class="service-card">
+            <span class="service-icon">🕒</span>
+            <h3>Real-Time Tracking</h3>
+            <p>Track every step with a simple number and stay connected to your cargo.</p>
           </article>
         </div>
       </div>
@@ -121,37 +205,46 @@
 
     <section id="countries" class="countries section">
       <div class="container">
-        <h2>Countries We Serve</h2>
-        <div class="grid country-grid">
-          <div class="country-card hover-card"><img src="assets/icons/flag-usa.svg" alt="USA flag"/><span>USA</span></div>
-          <div class="country-card hover-card"><img src="assets/icons/flag-canada.svg" alt="Canada flag"/><span>Canada</span></div>
-          <div class="country-card hover-card"><img src="assets/icons/flag-uk.svg" alt="UK flag"/><span>UK</span></div>
-          <div class="country-card hover-card"><img src="assets/icons/flag-australia.svg" alt="Australia flag"/><span>Australia</span></div>
-          <div class="country-card hover-card"><img src="assets/icons/flag-uae.svg" alt="UAE flag"/><span>UAE</span></div>
-          <div class="country-card hover-card"><img src="assets/icons/flag-saudi.svg" alt="Saudi Arabia flag"/><span>Saudi Arabia</span></div>
-          <div class="country-card hover-card"><img src="assets/icons/flag-singapore.svg" alt="Singapore flag"/><span>Singapore</span></div>
-          <div class="country-card hover-card"><img src="assets/icons/flag-qatar.svg" alt="Qatar flag"/><span>Qatar</span></div>
-          <div class="country-card hover-card"><img src="assets/icons/flag-eu.svg" alt="Europe flag"/><span>Europe</span></div>
+        <div class="section-head fade-on-scroll">
+          <span class="eyebrow">Global Reach</span>
+          <h2>Worldwide coverage with trusted routes.</h2>
+        </div>
+        <div class="grid country-grid fade-on-scroll">
+          <div class="country-card"><img src="assets/icons/flag-usa.svg" alt="USA flag"/><span>USA</span></div>
+          <div class="country-card"><img src="assets/icons/flag-canada.svg" alt="Canada flag"/><span>Canada</span></div>
+          <div class="country-card"><img src="assets/icons/flag-uk.svg" alt="UK flag"/><span>UK</span></div>
+          <div class="country-card"><img src="assets/icons/flag-australia.svg" alt="Australia flag"/><span>Australia</span></div>
+          <div class="country-card"><img src="assets/icons/flag-uae.svg" alt="UAE flag"/><span>UAE</span></div>
+          <div class="country-card"><img src="assets/icons/flag-saudi.svg" alt="Saudi Arabia flag"/><span>Saudi Arabia</span></div>
+          <div class="country-card"><img src="assets/icons/flag-singapore.svg" alt="Singapore flag"/><span>Singapore</span></div>
+          <div class="country-card"><img src="assets/icons/flag-qatar.svg" alt="Qatar flag"/><span>Qatar</span></div>
+          <div class="country-card"><img src="assets/icons/flag-eu.svg" alt="Europe flag"/><span>Europe</span></div>
         </div>
       </div>
     </section>
 
     <section id="why" class="why section">
       <div class="container">
-        <h2>Why Choose Us</h2>
-        <div class="grid why-grid">
-          <div class="why-item">Affordable Prices</div>
-          <div class="why-item">Door Pickup</div>
-          <div class="why-item">Safe Packing</div>
-          <div class="why-item">Fast Delivery</div>
-          <div class="why-item">Worldwide Network</div>
-          <div class="why-item">Customer Support</div>
+        <div class="section-head fade-on-scroll">
+          <span class="eyebrow">Why Choose Us</span>
+          <h2>A premium shipping experience built on trust.</h2>
+        </div>
+        <div class="grid why-grid fade-on-scroll">
+          <div class="why-item">White-glove service</div>
+          <div class="why-item">Luxury packaging</div>
+          <div class="why-item">24/7 support</div>
+          <div class="why-item">Global compliance</div>
+          <div class="why-item">Fast customs clearance</div>
+          <div class="why-item">Door-to-door tracking</div>
         </div>
       </div>
     </section>
 
-    <section id="rates" class="section rates container">
-      <h2>Rate Enquiry</h2>
+    <section id="rates" class="section rates container fade-on-scroll">
+      <div class="section-head">
+        <span class="eyebrow">Rate Enquiry</span>
+        <h2>Request a custom quote in seconds.</h2>
+      </div>
       <form id="rate-form" class="form form-grid">
         <label>Full Name<input type="text" name="name" required/></label>
         <label>Email<input type="email" name="email" required/></label>
@@ -166,15 +259,18 @@
       </form>
     </section>
 
-    <section id="book" class="section book container">
-      <h2>Book Pickup</h2>
+    <section id="book" class="section book container fade-on-scroll">
+      <div class="section-head">
+        <span class="eyebrow">Book Pickup</span>
+        <h2>Arrange your luxury pickup service.</h2>
+      </div>
       <form id="book-form" class="form">
         <label>Name<input type="text" name="name" required/></label>
         <label>Phone<input type="tel" name="phone" required/></label>
         <label>Address<textarea name="address" required></textarea></label>
         <label>Country<input type="text" name="country" required/></label>
         <label>Weight (kg)<input type="number" name="weight" min="0.1" step="0.1" required/></label>
-        <label>Parcel Type<select name="parcel_type"><option>Documents</option><option>Parcel</option><option>Food</option><option>Medicine</option></select></label>
+        <label>Parcel Type<select name="parcel_type" required><option>Documents</option><option>Parcel</option><option>Food</option><option>Medicine</option></select></label>
         <label>Message<textarea name="message"></textarea></label>
         <div class="form-actions">
           <button class="btn btn-primary" type="submit">Book Pickup</button>
@@ -182,8 +278,11 @@
       </form>
     </section>
 
-    <section id="tracking" class="section tracking container">
-      <h2>Track Shipment</h2>
+    <section id="tracking" class="section tracking container fade-on-scroll">
+      <div class="section-head">
+        <span class="eyebrow">Track Shipment</span>
+        <h2>Track your parcel with confidence.</h2>
+      </div>
       <div class="track-box">
         <input id="track-input" type="text" placeholder="Enter Tracking Number (e.g. DANDU123456)" />
         <button id="track-btn" class="btn btn-primary">Track</button>
@@ -191,8 +290,11 @@
       <div id="track-result" class="track-result" aria-live="polite"></div>
     </section>
 
-    <section id="reviews" class="section reviews container">
-      <h2>Customer Reviews</h2>
+    <section id="reviews" class="section reviews container fade-on-scroll">
+      <div class="section-head">
+        <span class="eyebrow">Client Stories</span>
+        <h2>Trusted by businesses and individuals worldwide.</h2>
+      </div>
       <div class="grid review-grid">
         <article class="review-card">
           <p>"Excellent service — fast pickup and safe delivery."</p>
@@ -209,8 +311,11 @@
       </div>
     </section>
 
-    <section id="faq" class="section faq container">
-      <h2>FAQ</h2>
+    <section id="faq" class="section faq container fade-on-scroll">
+      <div class="section-head">
+        <span class="eyebrow">FAQ</span>
+        <h2>Answers to your most common questions.</h2>
+      </div>
       <div class="accordion">
         <button class="accordion-item">How do I book a pickup?<span class="chev">+</span></button>
         <div class="panel">Use the "Book Pickup" form or call +91 98398 31249.</div>
@@ -221,11 +326,13 @@
       </div>
     </section>
 
-    <section id="contact" class="section contact container">
-      <h2>Contact</h2>
+    <section id="contact" class="section contact container fade-on-scroll">
       <div class="contact-grid">
         <div class="contact-card">
-          <h3>Office</h3>
+          <div class="section-head">
+            <span class="eyebrow">Contact</span>
+            <h2>Get in touch with our team.</h2>
+          </div>
           <address>
             3-106/1/2,<br>
             Near Vivekananda Statue,<br>
